@@ -1,294 +1,178 @@
 .fullWidthContainer{
     width: 100%;
-    height: 0 auto;
     max-width: 300px;
     display: block;
     margin: 10px auto;
 }
-/* Home*/
-nav{
-    background-color: clear;
-}
-nav ul{
-    text-align: center;
-    font-size: 1.2em;
-    color: black;
-}
-nav ul li{
-    list-style-type: none;
-    background-color: lightskyblue;
-    display: inline;
-    padding: 15px;
-    margin: 5px;
-    border: 2px;
-    border-radius: 10px;
-    color: black;
-}
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-nav ul li:hover{
-    background-color: blue;
-}
-footer{
-    padding: 0;
-    margin: 0;
-    bottom: 0px;
-    width: 100%;
-    background-color: black;
-}
 body{
-    background-color: black;
+    margin: 0;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+main{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+header{
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f2f8fc;
+    border-bottom:  2px solid #ddd;
 }
 h1{
     text-align: center;
-    font-size: 3em;
-    font-family: sans-serif;
-    color: black;    
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 h3{
     text-align: center;
-    font-size: 2em;
-    font-family: sans-serif;
-    color: black;
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 p{
-    text-align: center;
-    font-size: 1.5em;
-    font-family: sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
-ul{
+
+/* project link */
+.project{
+    margin-top: 40px;
+}
+.project{
+    padding: 20px;
+    margin-bottom: 30px;
+    border:  1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.projectType{
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+/* Independent */
+.projectType.independent{
+    background-color: white;
+}
+.projectType.team{
+    background-color: white;
+    color: #3d7044;
+}
+.project p{
+    text-align: left;
+}
+#project hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+.project img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+.project a:hover{
+    color: blue;
+}
+
+/* Navigation */
+nav{
     text-align: center;
-    font-size: 1.5em;
-    font-family: sans-serif;
+    margin-top: 20px;
+}
+nav ul{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-hr{
-    width: 100%;
-    height: 10px;
-    margin: auto;
-    background-color: black;
-    border:  black;
-}
-.listOfmigraines{
-    text-align: center;
-    font-size: 1.5em;
-    font-family: sans-serif;
-}
-.navFooter{
-    text-align: center;
-    font-size: 1.2em;
-    font-family: sans-serif;
-    list-style-type: none;
-    display: inline;
-    padding: 15px;
+nav ul li{
+    display: inline-block;
     margin: 5px;
-    
 }
-header{
-    background-image:url(../image/hosp.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200px;
-    color: navajowhite;
-    border: 1px solid black;
+nav ul li a{
+    display: inline-block;
+    background-color: lightskyblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
-#scrollToTop, #scrollToBottom {
-    position: fixed; 
+nav ul li a:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* Projects */
+#prjects{
+    margin-top: 40px;
+}
+#prjects h2{
+    text-align: center;
+    font-size: 2em;
+}
+#prjects h4{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+#prjects pP{
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Achievements */
+#achievements{
+    margin-top: 40px;
+}
+#achievements h2{
+    text-align: center;
+    font-size: 2em;
+}
+#achievements p{
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Button */
+#scrollToTop,
+#scrollToBottom{
+    position: fixed;
+    right: 20px;
     padding: 10px 20px;
     background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-#scrollToTop {
-    bottom: 80px; 
-    right: 20px; 
-    display: none; 
+#scrollToTop{
+    bottom: 80px;
+    display: none;
 }
-
-#scrollToBottom {
-    bottom: 20px; 
-    right: 20px; 
+#scrollToBottom{
+    bottom: 20px;
 }
-
-#scrollToTop:hover, #scrollToBottom:hover {
+#scrollToTop:hover,
+#scrollToBottom:hover{
     background-color: darkorange;
 }
-
-/*contactus*/
-label{
-    float: left;
-    width: 112px;
-    padding-right: 10px;
-    text-align: right;
-}
-input{
-    margin-left: 1em;
-    margin-bottom: .5em;
-    width: 220px;
-}
-#button, #reset{
-    margin-top: .5em;
-    width: 8em;
-    background-color: orange;
-    border: 2px solid black;
-}
-input[type="checkbox"]{
-    width: 15px;
-}
-#button{margin-left: 138px;}
-#reset{margin-left: 82px;}
-input[type="radio"]{
-    width: 10px;
-}
-.required{
-    font-weight: bold;
-    color: red;
-}
-body{
-    font-family: sans-serif;
-    background-image: url(../Forms/Image/Saint_Peters.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px;
-}
-main{
-    width: 70%;
-    margin: 0 auto;
+footer{
+    margin-top: 40px;
     padding: 20px;
-    border: black solid 1px;
-    background: white;
-    min-width: 500px;
-}
-header p{
-    position: relative;
-    top: 40%;
-    font-style: italic;
-    text-align:  center;
-}
-ul{
-    list-style: none;
-}
-li{
-    display: inline-block;
-}
-.map{
+    background-color: black;
+    color: white;
     text-align: center;
-}
-.map iframe{
-    width: 80% auto;
-    max-width: 800px;
-    height: 400px auto;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-
-/*Causes*/
-.factors{
-    text-align: left;
-    font-size: 1.5em;
-    font-family: sans-serif;
-
-}
-.boldFactors {
-    font-family: Arial, sans-serif;
-    font-size: 1.5em; 
-    color: #333; 
-    line-height: 1.6; 
-    margin-left: 20px; 
-    padding-left: 10px; 
-    list-style-type: decimal; 
-}
-.boldFactors li {
-    margin-bottom: 10px; 
-}
-ol {
-    list-style-type: decimal;    
-    margin-left: 20px; 
-    padding-left: 20px; 
-}
-ol li {
-    margin-bottom: 10px; 
-}
-ol, ul {
-    list-style-type: none; 
-}
-aside{
-    background-color: lightblue;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px;
-    width: 25%;
-    float: right;
-}
-.usefulLinks{
-    list-style: decimal;
-    padding-left: 20px;
-    margin: 0;
-    font-size: 1.5em;
-    font-family: sans-serif;
-}
-.usefulLinks li{
-    margin-bottom: 10px;
-    display: block;
-}
-.usefulLinks a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.usefulLinks a:hover{
-    color: blue;
-}
-.video {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 20px 0; 
-}
-
-/*doctor*/
-.doctors{
-    column-count: 3;
-    column-rule: 1px solid black;
-    column-gap: 50px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-}
-
-/*percentage*/
-table {
-    width:80%;
-    border :1px solid white;
-    border-collapse: collapse;
-    font-size:x-large;
-    text-align: center;
-    vertical-align: middle;
-    padding :2px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-th,td {
-    border: 1px solid white;
-    text-align: left;
-    padding: 8px;
-}
-
-thead th {
-  width: 25%;
-}
-
-.pregnancy_tab
-{
-    color: black;
 }
