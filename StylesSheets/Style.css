@@ -20,8 +20,8 @@ main{
 header{
     text-align: center;
     padding: 30px 20px;
-    background-color: #f2f8fc;
-    border-bottom:  2px solid #ddd;
+    background-color: aliceblue;
+    border-bottom:  2px solid lightgray;
 }
 h1{
     text-align: center;
@@ -43,25 +43,22 @@ p{
     line-height: 1.6;
 }
 
-/* project link */
+/* project */
 .project{
     margin-top: 40px;
-}
-.project{
     padding: 20px;
     margin-bottom: 30px;
-    border:  1px solid #ddd;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: whitesmoke;
 }
 .projectType{
     display: inline-block;
     font-size: 0.9em;
     font-weight: bold;
-    color: #555;
+    color: dimgray;
     margin-bottom: 5px;
 }
-/* Independent */
 .projectType.independent{
     background-color: white;
 }
@@ -74,7 +71,7 @@ p{
 }
 #project hr{
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid lightgray;
     margin: 20px 0;
 }
 .project img{
@@ -116,7 +113,7 @@ nav ul li a:hover{
     color: white;
 }
 
-/* Projects */
+/* Projects Section */
 #prjects{
     margin-top: 40px;
 }
@@ -128,7 +125,20 @@ nav ul li a:hover{
     font-size: 1.3em;
     margin-bottom: 5px;
 }
-#prjects pP{
+#prjects p{
+    text-align: left;
+    font-size: 1em;
+}
+.warning{
+    background-color: aliceblue;
+    border: 2px solid goldenrod;
+    color: darkgoldenrod;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+.warning p{
+    margin: 0;
     text-align: left;
     font-size: 1em;
 }
@@ -145,34 +155,47 @@ nav ul li a:hover{
     text-align: left;
     font-size: 1em;
 }
+.achievement{
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.achievement img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
 
-/* Button */
-#scrollToTop,
-#scrollToBottom{
-    position: fixed;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#scrollToTop{
-    bottom: 80px;
-    display: none;
-}
-#scrollToBottom{
-    bottom: 20px;
-}
-#scrollToTop:hover,
-#scrollToBottom:hover{
-    background-color: darkorange;
-}
+/* footer */
 footer{
     margin-top: 40px;
     padding: 20px;
     background-color: black;
     color: white;
     text-align: center;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li{
+    display: inline-block;
+    margin: 5px;
+}
+footer ul li a{
+    display: inline-block;
+    background-color: lightskyblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+footer ul li a:hover{
+    color: lightskyblue;
 }
